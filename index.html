@@ -4,9 +4,30 @@
     <title>Mi primera web</title>
 </head>
 <body>
-    <form>
-        <label for="">Ingrese su apellido</label>
-        <input />
+    <!--ul es lista no ordenada-->
+    <ul>
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+    </ul>
+
+
+    <form action="/formulario" method="post">
+        <label for="nombre">Ingrese su nombre</label> <!--la funcion for es para q al hacer click en "Ingrese nombre" tambien nos redirija al cuadro de texto -->
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Chanchito feliz..."/> <!--En "Type" define que tipo de objeto pedimos que ingrese el usuario ejemplo de tipos
+        text, submit, email, file, checkbox, password, radio, -->
+        <br> <!--etiqueta de salto de linea-->
+        <label for="apellido">Ingrese su apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Chanchito triste..."/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea  name="comentario" id="comentario" placeholder="Ingrese comentario" cols="40" rows="10">este es un valor por defecto</textarea>
+        <br>
+        <!--<input type="submit"/>-->
+        <button type ="button">Tipo boton</button>
+        <button type ="reset">Tipo reset</button>
+        <button type ="submit">Tipo submit</button>
     </form>
     <h1>Mi primer heading siuu</h1>
     <h2>Mi segundo heading</h2>
@@ -25,7 +46,6 @@
     <!-- este texto es un comentario y no va a 
     aparecer en el explorador-->
     <a target="_blank" href="https://www.google.com">Ir a google</a>
-    <img src="img/html.png" width="300"/>
-    
+    <img src="img/html.png" width="200"/>
 </body>
 </html>
